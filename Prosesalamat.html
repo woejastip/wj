@@ -199,7 +199,7 @@
             <p><strong>Nama Lengkap </strong><br><span id="displayKontak">Loading...</span></p>
             <p><strong>Nomor Telepon </strong><br>081244801294</p>
                <p><strong>Provinsi, Kota, Kecamatan, Kode Pos:</strong><br>DKI JAKARTA<br>KOTA JAKARTA TIMUR<br>KRAMAT JATI<br>13640</p>
-            <p><strong>Nama Jalan, Gedung, No. Rumah </strong><br>Kontrakan oren, Gg. Alisarbi Cililitan 13640 RT.08 RW.09 No. 11A (woe.jastip) (WOJ <span id="displayNama">Nama</span> <span id="displayWA">Nomor WA</span>) <span id="displayKota">Loading...</span></p>
+            <p><strong>Nama Jalan, Gedung, No. Rumah </strong><br>Kontrakan oren, Gg. Alisarbi Cililitan 13640 RT.08 RW.09 No. 11A (woe.jastip) ( <span id="displayNama">Nama</span> <span id="displayWA">Nomor WA</span>) <span id="displayKota">Loading...</span></p>
         </div>
     </div>
 
@@ -213,7 +213,7 @@
         var kota = localStorage.getItem("kota") || "Data kota tidak ditemukan"; // Ambil data kota
 
         // Menampilkan data pada elemen yang sesuai
-        document.getElementById("displayKontak").textContent = "WOJ" + nama + " " + wa + " " + kota; // Menambahkan kota
+        document.getElementById("displayKontak").textContent = "" + nama + " " + wa + " " + kota; // Menambahkan kota
         document.getElementById("displayNama").textContent = nama;
         document.getElementById("displayWA").textContent = wa;
         document.getElementById("displayKota").textContent = kota; // Menambahkan kota ke bagian Nama Jalan, Gedung, No. Rumah
